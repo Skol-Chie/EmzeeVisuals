@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - Emzee Visuals Support</title>
+  <link rel="stylesheet" href="newpot.css">
+</head>
+<body>
+
+  <header id="feedback-header" class="header-section">
+    <h1 class="header-title">We Value Your Feedback</h1>
+    <p class="header-subtitle">Tell us what you think about our services and how we can improve!</p>
+  </header>
+
+ 
+  <main id="feedback-main" class="feedback-content">
+    <section id="feedback-form-section" class="form-section">
+      <h2 class="form-title">Share Your Thoughts</h2>
+      <form id="feedback-form" action="submit_feedback.php" method="POST">
+        <label for="name" class="form-label">Your Name:</label>
+        <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required>
+
+        <label for="email" class="form-label">Your Email:</label>
+        <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+
+        <label for="feedback" class="form-label">Your Feedback:</label>
+        <textarea id="feedback" name="feedback" class="form-textarea" placeholder="Write your feedback here" rows="5" required></textarea>
+
+        <button type="submit" class="form-button">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  
+  <footer id="feedback-footer" class="footer-section">
+    <p class="footer-text">© 2025 Emzee Visuals Support. Your thoughts matter!</p>
+    <a href="new.html#support-section" class="back-home-link">Back to Support</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Started - Emzee Visuals</title>
+  <link rel="stylesheet" href="newpot.css">
+</head>
+<body>
+ 
+  <header id="get-started-header" class="header-section">
+    <h1 class="header-title">Get Started with Emzee Visuals</h1>
+    <p class="header-subtitle">We’re excited to learn more about your project. Let’s bring your vision to life!</p>
+  </header>
+
+  
+  <main id="get-started-main" class="main-content">
+    <section id="get-started-form-section" class="form-section">
+      <h2 class="form-title">Share Your Project Details</h2>
+      <form id="get-started-form" action="submit_form.php" method="POST">
+        <label for="name" class="form-label">Your Name:</label>
+        <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required>
+
+        <label for="email" class="form-label">Your Email:</label>
+        <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+
+        <label for="service" class="form-label">Service Interested In:</label>
+        <select id="service" name="service" class="form-select" required>
+          <option value="motion-graphics">Motion Graphics</option>
+          <option value="color-grading">Color Grading</option>
+          <option value="graphic-designing">Graphic Designing</option>
+          <option value="video-editing">Video Editing</option>
+          <option value="ads-targeting">Ads Targeting</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="project-details" class="form-label">Project Details:</label>
+        <textarea id="project-details" name="project-details" class="form-textarea" placeholder="Describe your project" rows="5" required></textarea>
+
+        <button type="submit" class="form-button">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  
+  <footer id="get-started-footer" class="footer-section">
+    <p class="footer-text">© 2025 Emzee Visuals. Crafting Excellence in Every Frame.</p>
+    <a href="new.html#ctad" class="back-home-link">Back to page</a>
+  </footer>
+</body>
+</html>

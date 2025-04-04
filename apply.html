@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply Now - Emzee Visuals Careers</title>
+  <link rel="stylesheet" href="newpot.css">
+</head>
+<body>
+ 
+  <header id="apply-header" class="header-section">
+    <h1 class="header-title">Join the Creative Force at Emzee Visuals</h1>
+    <p class="header-subtitle">We’re excited to have you apply for one of our amazing roles. Let’s get started!</p>
+  </header>
+
+  
+  <main id="apply-main" class="form-section">
+    <h2 class="form-title">Application Form</h2>
+    <p class="form-description">Fill out the form below to start your application journey with Emzee Visuals.</p>
+    <form id="apply-form" action="submit_application.php" method="POST" enctype="multipart/form-data">
+     
+      <label for="applicant-name" class="form-label">Your Name:</label>
+      <input type="text" id="applicant-name" name="applicant-name" class="form-input" placeholder="Enter your full name" required>
+
+      
+      <label for="applicant-email" class="form-label">Your Email:</label>
+      <input type="email" id="applicant-email" name="applicant-email" class="form-input" placeholder="Enter your email address" required>
+
+      
+      <label for="job-position" class="form-label">Position Applying For:</label>
+      <select id="job-position" name="job-position" class="form-select" required>
+        <option value="motion-graphics-designer">Motion Graphics Designer</option>
+        <option value="video-editor">Video Editor</option>
+        <option value="graphic-designer">Graphic Designer</option>
+        <option value="ads-specialist">Ads Targeting Specialist</option>
+        <option value="other">Other</option>
+      </select>
+
+     
+      <label for="resume" class="form-label">Upload Your Resume:</label>
+      <input type="file" id="resume" name="resume" class="form-input" accept=".pdf, .doc, .docx" required>
+
+     
+      <label for="cover-letter" class="form-label">Cover Letter (Optional):</label>
+      <textarea id="cover-letter" name="cover-letter" class="form-textarea" placeholder="Briefly introduce yourself and your skills" rows="5"></textarea>
+
+      
+      <label for="additional-info" class="form-label">Additional Information:</label>
+      <textarea id="additional-info" name="additional-info" class="form-textarea" placeholder="Tell us why you’re the perfect fit for this role" rows="5"></textarea>
+
+     
+      <button type="submit" class="form-button">Submit Application</button>
+    </form>
+  </main>
+
+  
+  <footer id="contact-footer" class="footer-section">
+    <p class="footer-text">© 2025 Emzee Visuals Careers. Let’s build something amazing together.</p>
+    <a href="career.html" class="back-home-link">Back to Careers</a>
+  </footer>
+</body>
+</html>

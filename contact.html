@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Emzee Visuals</title>
+  <link rel="stylesheet" href="newpot.css">
+</head>
+<body>
+  <header id="contact-header" class="header-section">
+    <h1 class="header-title">Contact Emzee Visuals</h1>
+    <p class="header-subtitle">Reach out to us for inquiries, collaborations, and more.</p>
+  </header>
+  <main id="contact-main" class="main-content">
+    <section id="contact-info" class="content-section">
+      <h2 class="section-title">Our Contact Information</h2>
+      <p>Email: <a href="mailto:info@emzeevisuals.com" class="contact-link">info@emzeevisuals.com</a></p>
+      <p>Phone: <a href="tel:+123456789" class="contact-link">+234-9156558811</a></p>
+      <p>Address: Emzee Visuals HQ, FCT Abuja, Nigeria</p>
+    </section>
+    <section id="contact-form-section" class="form-section">
+      <h2 class="form-title">Send Us a Message</h2>
+      <form id="contact-us-form" action="contact_submit.php" method="POST">
+        <label for="name" class="form-label">Your Name:</label>
+        <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name" required>
+
+        <label for="email" class="form-label">Your Email:</label>
+        <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+
+        <label for="message" class="form-label">Message:</label>
+        <textarea id="message" name="message" class="form-textarea" placeholder="Type your message here" rows="5" required></textarea>
+
+        <button type="submit" class="form-button">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer id="contact-footer" class="footer-section">
+    <p>© 2025 Emzee Visuals. All rights reserved.</p>
+    <a href="new.html#support-section" class="back-home-link">Back to Resources</a>
+  </footer>
+</body>
+</html>
