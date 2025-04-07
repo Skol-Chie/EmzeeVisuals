@@ -45,4 +45,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 header("Location: thank_you.html");
 exit;
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars($_POST["name"]);
+    $feedback = htmlspecialchars($_POST["feedback"]);
+
+    // Process or save feedback (e.g., write to a database or send via email)
+    echo "Feedback received! Thank you, $name.";
+  } else {
+    http_response_code(405);
+    echo "Method Not Allowed.";
+  }
+
 ?>
