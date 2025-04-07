@@ -18,38 +18,16 @@ rotateTestimonials();
 setInterval(rotateTestimonials, 5000);
 
 
-const feedbackForm = document.getElementById("feedback-form");
-  feedbackForm.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent form from reloading the page
-
-    // Get user input values
+// Handle form submission
+  document.getElementById("submit-feedback").addEventListener("click", function () {
     const name = document.getElementById("name").value;
     const feedback = document.getElementById("feedback").value;
 
     // Save feedback to localStorage
-    const feedbackArray = JSON.parse(localStorage.getItem("feedbackData")) || [];
-    feedbackArray.push({ name, feedback });
-    localStorage.setItem("feedbackData", JSON.stringify(feedbackArray));
+    const feedbackData = JSON.parse(localStorage.getItem("feedbackData")) || [];
+    feedbackData.push({ name, feedback });
+    localStorage.setItem("feedbackData", JSON.stringify(feedbackData));
 
-    // Redirect back to the homepage
-    window.location.href = "index.html";
+    alert("Feedback submitted successfully!");
+    window.location.href = "index.html"; 
   });
-
-  // Load feedback from localStorage and display it
-  const feedbackContainer = document.getElementById("feedback-container");
-  const savedFeedback = JSON.parse(localStorage.getItem("feedbackData")) || [];
-
-  savedFeedback.forEach((entry) => {
-    const testimonial = document.createElement("div");
-    testimonial.classList.add("testimonial");
-    testimonial.innerHTML = `
-      <blockquote>
-        <p>"${entry.feedback}"</p>
-      </blockquote>
-      <div class="client-info">
-        <h3>${entry.name}</h3>
-      </div>
-    `;
-    feedbackContainer.appendChild(testimonial);
-  });
-
